@@ -38,8 +38,8 @@ a:hover {
 /*titulo e subtitulo / juntar dois atributos*/        
 .site-subtitle,       
 .site-title {            
-    color: aliceblue;            
-    text-align: center;       
+    color: rgb(0, 136, 255);            
+    text-align: center;
 }
         
 /*subtitulo*/        
