@@ -1,0 +1,48 @@
+/* Aula inicial :D */
+/*tags*/
+body {
+    font: normal 16pt Arial;
+    background-image: url('https://pbs.twimg.com/media/EXwzerCWoAgsTr4?format=jpg&name=large');
+/*tamanho da imagem*/
+    background-size: 100vw 100vh;
+    height: 100vh
+}
+
+/* .classe */
+.menu {
+    background-color: white;
+}
+
+/*eventos */
+a {     
+    color: teal;
+    text-decoration: none;        
+}
+       
+/* pseudo classe */      
+a:hover {            
+    text-decoration: underline;        
+}
+        
+/*seletor hierarquico*/        
+.menu li {            
+    list-style: none;        
+}
+        
+/* arrumar o alinhamento dos links*/       
+.menu ul {        
+    display: flex;           
+    justify-content: space-around;       
+}
+        
+/*titulo e subtitulo / juntar dois atributos*/        
+.site-subtitle,       
+.site-title {            
+    color: aliceblue;            
+    text-align: center;       
+}
+        
+/*subtitulo*/        
+.site-subtitle {            
+    font-style: italic;        
+}
