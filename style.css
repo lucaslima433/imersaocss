@@ -8,7 +8,7 @@
 
 /*tags*/
 body {
-    font: normal 16pt Arial;
+    font: normal 10pt Arial;
     background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2020/05/msp_1611_1226.jpg');
 
     /*tamanho da imagem*/
@@ -19,9 +19,33 @@ body {
     backdrop-filter: blur(5px);
 }
 
+/* Se a tela tiver */
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+}
+/*breakpoint */
+@media (min-width: 600px) {
+    body{
+        font-size: 18px;
+    }
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* .classe */
+/* barra de navegação*/
 .menu {
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
 }
 
 /*eventos */
@@ -45,13 +69,19 @@ a:hover {
     display: flex;           
     justify-content: space-around;       
 }
+
+.menu a {
+    /* area de click */
+    display: block;
+    padding: 10px 20px;
+}
         
 /*titulo e subtitulo / juntar dois atributos*/        
 .site-subtitle,       
 .site-title {            
     color: rgb(0, 136, 255);            
     text-align: center;
-    padding-top: 10px;
+    font-size: 3em;
 }
         
 /*subtitulo*/        
@@ -60,3 +90,17 @@ a:hover {
 }
 
 /* ajustar imagens */
+.img-portfolio{
+    height: 150px;
+    width: 150px;
+}
+
+section{
+    background: aliceblue;
+    border-radius: 10px;
+    width: 500px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
