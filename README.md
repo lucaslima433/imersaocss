@@ -1,2 +1,2 @@
-# imersaocss
-Site HTML+ CSS
+# imersaoCSS
+Repositório para planejamento das aulas
