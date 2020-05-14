@@ -1,11 +1,22 @@
 /* Aula inicial :D */
+/*Seletor universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*tags*/
 body {
     font: normal 16pt Arial;
     background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2020/05/msp_1611_1226.jpg');
-/*tamanho da imagem*/
+
+    /*tamanho da imagem*/
     background-size: 100vw 100vh;
-    height: 100vh
+    height: 100vh;
+    
+    /*Efeito esfumaçado no background*/
+    backdrop-filter: blur(5px);
 }
 
 /* .classe */
@@ -15,7 +26,7 @@ body {
 
 /*eventos */
 a {     
-    color: teal;
+    color: rgb(0, 179, 179);
     text-decoration: none;        
 }
        
@@ -40,9 +51,12 @@ a:hover {
 .site-title {            
     color: rgb(0, 136, 255);            
     text-align: center;
+    padding-top: 10px;
 }
         
 /*subtitulo*/        
 .site-subtitle {            
     font-style: italic;        
 }
+
+/* ajustar imagens */
