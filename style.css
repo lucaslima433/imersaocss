@@ -8,7 +8,8 @@
 
 /*tags*/
 body {
-    font: normal 10pt Arial;
+    font-size: 10pt;
+    font-family: 'Source Code Pro', monospace;
     background-image: url('https://cdn.magdeleine.co/wp-content/uploads/2020/05/msp_1611_1226.jpg');
 
     /*tamanho da imagem*/
@@ -80,27 +81,87 @@ a:hover {
 .site-subtitle,       
 .site-title {            
     color: rgb(0, 136, 255);            
-    text-align: center;
+    text-align: center;  
+}
+
+.site-title{
     font-size: 3em;
+    font-family: 'Marck Script', cursive;
 }
         
 /*subtitulo*/        
 .site-subtitle {            
-    font-style: italic;        
+    font-style: italic;   
+    font-family: 'Indie Flower', cursive;     
+}
+
+.portfolio {
+    height: 100vh;
+}
+
+.portfolio h2 {
+    font-family: 'Indie Flower', cursive;
+}
+/* layout de grip para as imagens */
+.portfolio .grid{
+    display: grid;
+    gap: 1em;
+}
+
+@media (min-width: 500px){
+    .portfolio .grid {
+        grid-template-columns: 220px 220px;
+    }
+}
+
+@media (min-width: 900px){
+    .portfolio .grid {
+        grid-template-columns: repeat(3, 240px);
+        height: 65vh;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.portfolio figure{
+    text-align: center;
 }
 
 /* ajustar imagens */
 .img-portfolio{
     height: 150px;
     width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 section{
     background: aliceblue;
     border-radius: 10px;
-    width: 500px;
-    padding: 15px;
+    width: 250px;
+    padding: 2em;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 2em;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+
+@media (min-width: 500px){
+    .img-portfolio{
+    height: 100px;
+    width: 100px;
+    }
+    section {
+        width: 480px;
+        padding: 1em;
+        margin: auto;
+        margin-top: 1em;
+    }
+}
+@media (min-width: 500px){
+    section {
+        width: 800px;
+        padding: 3em;
+        margin: auto;
+        margin-top: 3em;
+    }
 }
