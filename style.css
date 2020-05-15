@@ -44,9 +44,9 @@ header{
 /* barra de navegação*/
 .menu {
     background-color: white;
-    position: fixed;
-    width: 100vw;
+    position: absolute;
     top: 0px;
+    width: 100vw;
 }
 
 /*eventos */
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .portfolio {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .portfolio h2 {
@@ -129,8 +129,8 @@ a:hover {
 
 /* ajustar imagens */
 .img-portfolio{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -138,7 +138,7 @@ a:hover {
 section{
     background: aliceblue;
     border-radius: 10px;
-    width: 250px;
+    min-width: 250px;
     padding: 2em;
     margin: auto;
     margin-top: 2em;
@@ -147,8 +147,8 @@ section{
 
 @media (min-width: 500px){
     .img-portfolio{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     }
     section {
         width: 480px;
@@ -157,7 +157,11 @@ section{
         margin-top: 1em;
     }
 }
-@media (min-width: 500px){
+@media (min-width: 900px){
+    .img-portfolio{
+        height: 200px;
+        width: 200px;
+        }
     section {
         width: 800px;
         padding: 3em;
