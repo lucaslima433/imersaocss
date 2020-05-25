@@ -1,2 +1,2 @@
 # imersaoCSS
-Repositório para planejamento das aulas
+Site pessoal feito com base nas aulas da imersão css
